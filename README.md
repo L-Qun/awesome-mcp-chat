@@ -67,7 +67,6 @@ https://github.com/user-attachments/assets/09976480-ed66-413a-9ef6-f85079cfa593
 
     - Clerk authentication keys (`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`)
     - Database connection string (if applicable)
-    - Other API Keys (e.g., OpenAI API Key, if needed by your selected models)
 
     ```bash
     cp .env.local.example .env.local

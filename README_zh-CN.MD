@@ -67,7 +67,6 @@ https://github.com/user-attachments/assets/0b515bce-73b5-4cd4-8f2a-1ac2b9e0bd27
 
     - Clerk 相关的 Key (`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`, `CLERK_SECRET_KEY`)
     - 数据库连接信息 (如果您使用了数据库)
-    - 其他 API Keys (例如 OpenAI API Key，如果模型需要)
 
     ```bash
     cp .env.local.example .env.local
