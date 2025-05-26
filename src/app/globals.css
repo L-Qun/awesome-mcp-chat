@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --user-message-bg: #f5f5f5;
+  --assistant-message-bg: transparent;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --user-message-bg: #343541;
+    --assistant-message-bg: transparent;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-message .wmde-markdown {
+  background-color: var(--user-message-bg) !important;
+}
+
+.assistant-message .wmde-markdown {
+  background-color: var(--assistant-message-bg) !important;
+}
+
+.wmde-markdown ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  counter-reset: item !important;
+}
+
+.wmde-markdown ol li {
+  display: list-item !important;
+  margin-bottom: 0.3em !important;
+  counter-increment: item !important;
+}
+
+.wmde-markdown ol li::before {
+  content: none !important;
+}
+
+.wmde-markdown ol ol {
+  list-style-type: lower-alpha !important;
+}
+
+.wmde-markdown ol ol ol {
+  list-style-type: lower-roman !important;
+}
